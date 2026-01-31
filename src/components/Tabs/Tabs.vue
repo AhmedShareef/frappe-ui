@@ -37,7 +37,7 @@ defineSlots<{
     :as="props.as"
     class="flex flex-1 overflow-hidden flex-col data-[orientation=vertical]:flex-row"
     :orientation="props.vertical ? 'vertical' : 'horizontal'"
-    :default-value="props.tabs[0].label"
+    :default-value="props.tabs[0].label || 0"
     v-model="model"
   >
     <TabsList
